@@ -1,8 +1,92 @@
 /*  BODY   */
 
-html {
+body {
+  font-family: Helvetica;
+  font-size: 20px;
+  margin: 0 auto;
 }
 
 /*  HEADER  */
 
+.header1 {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  border-bottom: 2px solid grey;
+  padding-left: 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoimg {
+  display: flex;
+  align-items: center;
+  height: 32px;
+}
+
+.colmar {
+  font-weight: bold;
+}
+
+.academy {
+  color: grey;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 24px;
+}
+
+.hnav {
+  margin-right: 16px;
+  color: black;
+  text-decoration: none;
+}
+
+.header2 {
+  display: none;
+}
+
 /*  FOOTER  */
+
+/*  MEDIA  */
+
+
+@media only screen and (max-width: 1024px) {
+  .header2 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+
+  .header1 {
+    display: none;
+  }
+
+  .header2 {
+    height: 64px;
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    border-bottom: 2px solid grey;
+  }
+
+  .mobhead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
