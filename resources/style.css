@@ -33,9 +33,11 @@ body {
 
 .colmar {
   font-weight: bold;
+  font-size: 22px;
 }
 .academy {
   color: grey;
+  font-size: 22px;
 }
 
 .menu {
@@ -55,106 +57,114 @@ body {
   display: none;
 }
 
-
 /*  BANNER  */
 
-.banner {
-  display: inline-flex;
-  justify-content: center;
+.banner1 {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
   margin-top: 64px;
-  width: 100%;
   background-color: lightgrey;
+  width: 100%;
 }
 
-.bannerimg {
+.bannerimg img {
   display: flex;
   margin: 32px 24px 32px 24px;
-  width: 5rem;
-  margin-bottom: 1rem;
+  background-color: red;
+  height: 650px;
 }
 
-.bannertxt {
-  width: 300px;
-  margin-top: 150px;
-  margin-bottom: 150px;
-  display: block;
-  justify-content: center;
+.bannertxt div {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  color: #404040;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 60px;
 }
 
 .learn1 {
-  display: flex;
   font-size: 32px;
   font-weight: bold;
-  justify-content: center;
-  margin-top: 25px;
-  margin-bottom: 25px;
 }
 
 .learn2 {
-  display: flex;
   font-size: 22px;
-  justify-content: center;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  padding-bottom: 30px;
 }
 
-.button {
+.button p {
   display: flex;
   color: white;
   background-color: #404040;
   justify-content: center;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px 45px 8px 45px;
   margin-top: 25px;
+  width: 150px;
+  border-radius: 5px;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
 }
+.button p:hover {
+  background-color: firebrick;
+}
+
+/*  NEWS SECTION  */
+
+.news {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.news1 {
+  display: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 850px;
+  margin: 32px 24px 32px 24px;
+}
+
+.news1img img {
+  display: flex;
+  height: 450px;
+  margin-bottom: 32px;
+}
+
+.newsbanner {
+  display: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #404040;
+  padding-bottom: 24px;
+  word-spacing: 4px;
+  font-family: Verdana;
+}
+
+.text1 {
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: gray;
+  max-width: 700px;
+  word-spacing: 3px;
+}
+
+.text2 {
+  font-size: 12px;
+  padding-bottom: 30px;
+  color: gray;
+  font-weight: bold;
+
+}
+
 /*  FOOTER  */
-
-/*  MEDIA  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 1024px) {
-  .header2 {
-    display: none;
-  }
-
-  .bannerimg {
-  }
-}
-
-@media only screen and (max-width: 560px) {
-
-  .header1 {
-    display: none;
-  }
-
-  .header2 {
-    height: 64px;
-    display: block;
-    align-items: center;
-    justify-content: space-around;
-    position: fixed;
-    width: 100%;
-    top: 0px;
-    border-bottom: 2px solid grey;
-  }
-
-  .mobhead {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
