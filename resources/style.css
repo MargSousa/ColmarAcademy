@@ -1,8 +1,8 @@
 /*  BODY   */
 
 body {
-  font-family: Verdana;
-  font-size: 18px;
+  font-family: 'Telex', sans-serif;
+  font-size: 20px;
   margin: 0 auto;
 }
 
@@ -16,7 +16,7 @@ body {
   position: fixed;
   width: 100%;
   top: 0px;
-  padding-left: 24px;
+  padding-left: 26px;
   background-color: white;
 }
 
@@ -33,11 +33,11 @@ body {
 
 .colmar {
   font-weight: bold;
-  font-size: 22px;
+  font-size: 26px;
 }
 .academy {
   color: grey;
-  font-size: 22px;
+  font-size: 26px;
 }
 
 .menu {
@@ -64,7 +64,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   margin-top: 64px;
-  background-color: lightgrey;
+  background-color: #e6e6e6;
   width: 100%;
 }
 
@@ -73,10 +73,11 @@ body {
   margin: 32px 24px 32px 24px;
   background-color: red;
   height: 650px;
+  max-width: 850px;
 }
 
 .bannertxt div {
-  max-width: 350px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,24 +85,27 @@ body {
   margin-top: 25px;
   margin-bottom: 25px;
   margin-left: 60px;
+  font-family: 'Telex', sans-serif;
+  color: #666666;
 }
 
 .learn1 {
-  font-size: 32px;
+  font-size: 48px;
   font-weight: bold;
 }
 
 .learn2 {
-  font-size: 22px;
-  padding-bottom: 30px;
+  font-size: 28px;
+  padding-bottom: 20px;
+  padding-top: 10px;
 }
 
 .button p {
   display: flex;
   color: white;
-  background-color: #404040;
+  background-color: #666666;
   justify-content: center;
-  padding: 8px 45px 8px 45px;
+  padding: 11px 45px 11px 45px;
   margin-top: 25px;
   width: 150px;
   border-radius: 5px;
@@ -120,13 +124,14 @@ body {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
+  font-family: 'Telex', sans-serif;
 }
 
 .news1 {
   display: column;
   justify-content: center;
   align-items: center;
-  max-width: 850px;
+  max-width: 9000px;
   margin: 32px 24px 32px 24px;
 }
 
@@ -136,35 +141,117 @@ body {
   margin-bottom: 32px;
 }
 
-.newsbanner {
-  display: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.title {
-  font-size: 24px;
+.title, .maintitle {
+  font-size: 38px;
   font-weight: bold;
   color: #404040;
-  padding-bottom: 24px;
-  word-spacing: 4px;
-  font-family: Verdana;
+  padding-bottom: 30px;
+  word-spacing: 1px;
 }
 
 .text1 {
-  font-size: 16px;
+  font-size: 18px;
   padding-bottom: 30px;
   color: gray;
-  max-width: 700px;
-  word-spacing: 3px;
+  max-width: 690px;
+  word-spacing: 3.5px;
 }
 
 .text2 {
-  font-size: 12px;
+  font-size: 14px;
   padding-bottom: 30px;
   color: gray;
   font-weight: bold;
 
 }
+
+.newsbanner {
+  display: block;
+  justify-content: column;
+  align-items: center;
+  max-width: 600px;
+  border-left: solid 1px lightgrey;
+  font-family: 'Telex', sans-serif;
+  word-spacing: 1px;
+}
+
+.newsbannerimg img {
+  display: flex;
+  margin: 16px 16px 16px 16px;
+  height: 200px;
+}
+
+.news2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.title2 {
+  color: #404040;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.text3 div {
+  padding: 10px 20px 10px 20px;
+}
+
+.text4 {
+  font-size: 18px;
+  color:gray;
+}
+
+.text5 {
+  color: CornflowerBlue;
+  font-size: 18px;
+}
+
+.news2:nth-child(3n + 0) {
+  background-color: #e6e6e6;
+}
+
+.news2:nth-child(1n + 0) {
+  border-bottom: double 4px #e6e6e6;
+}
+
+
+/*  COURSES  */
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #e6e6e6;
+  padding: 32px 72px 32px 72px;
+}
+
+.maintitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100%;
+}
+
+.coursebox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 32px;
+  max-width: 450px;
+}
+
 
 /*  FOOTER  */
