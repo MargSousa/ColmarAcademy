@@ -196,6 +196,11 @@ body {
   height: 150px;
 }
 
+.newsmobileimg {
+  display: none;
+}
+
+
 .news2 {
   display: flex;
   justify-content: center;
@@ -316,13 +321,13 @@ body {
   display: flex;
   align-items: baseline;
   color: #404040;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
   padding: 16px 16px 8px 16px;
 }
 
 .text6 {
-  font-size: 16px;
+  font-size: 15px;
   color:gray;
   margin: 12px 16px 12px 16px;
   max-width: 300px;
@@ -330,10 +335,14 @@ body {
 }
 
 .text7 {
-  font-size: 16px;
+  font-size: 15px;
   color:gray;
   margin: 8px 16px 24px 16px;
   max-width: 300px;
+}
+
+.boxmobile {
+  display: none;
 }
 
 /*  THESIS  */
@@ -442,4 +451,105 @@ body {
 
 .footer .link {
   color: gray;
+}
+
+
+/*  MEDIA SECTION  */
+
+@media only screen and (max-width: 700px) {
+
+  body {
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 400px;
+  }
+
+  .header1, .coursebox,.newsbannerimg,.news1txt, .right, .news1, .terms {
+    display: none;
+  }
+
+  .header2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 64px;
+    position: fixed;
+    top: 0px;
+    max-width: 600px;
+    width: 100%;
+    background-color: white;
+  }
+
+  .mobhead img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+  }
+
+  .newsbanner {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    display: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .news2 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    margin: 16px 16px 32px 16px;
+    background-color: white;
+    max-width: 300px;
+    max-height: 1000px;
+  }
+
+  .newsmobileimg {
+    display: flex;
+  }
+
+
+  .news2:nth-child(3n + 0) {
+    background-color: white;
+  }
+
+  .news2:nth-child(1n + 0) {
+    border-bottom: none;
+  }
+
+  .courses {
+    background-color: white;
+    border-top: solid 1px lightgrey;
+  }
+
+  .boxmobiles{
+    display: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titlecourse {
+    display: flex;
+    background-color: lightgrey;
+    border: solid 3px white;
+    padding: 16px 16px 24px 16px;
+    margin-bottom: 5px;
+  }
+
+  .titlecourse:hover {
+    border: solid 3px firebrick;
+    border-radius: 5px;
+  }
+
+  .thesis {
+    border-top: solid 1px lightgrey;
+  }
+
+  .video {
+    display: block;
+    max-width: 100%;
+    height: auto
+  }
 }
