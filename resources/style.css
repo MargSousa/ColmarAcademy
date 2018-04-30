@@ -4,6 +4,7 @@ body {
   font-family: 'Telex', sans-serif;
   font-size: 18px;
   margin: 0 auto;
+  flex: auto;
 }
 
 /*  HEADER  */
@@ -95,6 +96,11 @@ body {
   color: #404040;
 }
 
+.bannertxt2 {
+  display: none;
+}
+
+
 .learn1 {
   font-size: 40px;
   font-weight: bold;
@@ -111,7 +117,7 @@ body {
   color: white;
   background-color: #404040;
   justify-content: center;
-  padding: 11px 45px 11px 45px;
+  padding: 11px 40px 11px 45px;
   margin-top: 25px;
   width: 150px;
   border-radius: 5px;
@@ -157,7 +163,7 @@ body {
 }
 
 .title, .maintitle {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: bold;
   color: #404040;
   padding-bottom: 24px;
@@ -229,7 +235,6 @@ body {
 
 .news2:nth-child(3n + 0) {
   background-color: #e6e6e6;
-  padding-left: 16px;
 }
 
 .news2:nth-child(1n + 0) {
@@ -327,7 +332,7 @@ body {
 }
 
 .text6 {
-  font-size: 15px;
+  font-size: 18px;
   color:gray;
   margin: 12px 16px 12px 16px;
   max-width: 300px;
@@ -339,10 +344,6 @@ body {
   color:gray;
   margin: 8px 16px 24px 16px;
   max-width: 300px;
-}
-
-.boxmobile {
-  display: none;
 }
 
 /*  THESIS  */
@@ -369,6 +370,10 @@ body {
   height: auto;
   margin-left: 24px;
   margin-bottom: 24px;
+}
+
+.videomobile {
+  display: none;
 }
 
 .right {
@@ -427,6 +432,14 @@ body {
   text-decoration: none;
 }
 
+.titlecourse2 {
+  display: none;
+}
+
+.bannertxt2 {
+  display: none;
+}
+
 /*  FOOTER  */
 
 .footer {
@@ -453,15 +466,27 @@ body {
   color: gray;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
 
 /*  MEDIA SECTION  */
 
-@media only screen and (max-width: 700px) {
+
+@media only screen and (max-width: 600px) {
 
   body {
     margin: 0 auto;
     justify-content: center;
     max-width: 400px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
   }
 
   .header1, .coursebox,.newsbannerimg,.news1txt, .right, .news1, .terms {
@@ -475,7 +500,7 @@ body {
     height: 64px;
     position: fixed;
     top: 0px;
-    max-width: 600px;
+    max-width: 450px;
     width: 100%;
     background-color: white;
   }
@@ -494,22 +519,27 @@ body {
     display: column;
     justify-content: center;
     align-items: center;
+    border-left: none;
+    margin: 70px 16px 16px 16px;
   }
 
   .news2 {
     display: flex;
     flex-direction: column;
-    padding-bottom: 20px;
-    margin: 16px 16px 32px 16px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
     background-color: white;
-    max-width: 300px;
-    max-height: 1000px;
+    max-width: 400px;
+    height: auto;
   }
 
   .newsmobileimg {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
   }
-
 
   .news2:nth-child(3n + 0) {
     background-color: white;
@@ -524,21 +554,24 @@ body {
     border-top: solid 1px lightgrey;
   }
 
-  .boxmobiles{
+  .boxmobiles {
     display: column;
     justify-content: center;
     align-items: center;
   }
 
-  .titlecourse {
+  .titlecourse2 {
     display: flex;
     background-color: lightgrey;
     border: solid 3px white;
     padding: 16px 16px 24px 16px;
     margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: Helvetica;
   }
 
-  .titlecourse:hover {
+  .titlecourse2:hover {
     border: solid 3px firebrick;
     border-radius: 5px;
   }
@@ -547,9 +580,74 @@ body {
     border-top: solid 1px lightgrey;
   }
 
-  .video {
+  .container {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .bannerimg img {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+
+  .banner1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+  }
+
+  .banner1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+  }
+
+  .bannertxt div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    height: auto;
+    margin: auto;
+    margin-bottom: 16px;
+  }
+
+  .button p {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .learn1 {
+    font-size: 32px;
+  }
+
+  .learn2 {
+    font-size: 20px;
+  }
+
+  .videoleft {
+    display: none;
+  }
+
+  .videomobile {
     display: block;
     max-width: 100%;
-    height: auto
+    height: auto;
+    margin-bottom: 16px;
   }
+
+  .thesis .maintitle {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+
 }
